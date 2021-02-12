@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function useMessageEncryption() {
     
     // var decoded = String.fromCharCode(...new Uint8Array(message));
