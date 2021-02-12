@@ -1,0 +1,40 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    
+    .active-link {
+        @apply text-theme border-theme border-r-4 border-solid
+    }
+    .active-link-text{
+        @apply text-gray-700 
+    }
+}
+@layer utilities {
+    .chat-box-min-h {
+        min-height:10%;
+    }
+    .h-chat-body-min{
+        height: 80%;
+    }
+    .chat-box-body-min-h {
+        min-height:80%;
+    }
+    .rounded-t-r-none {
+        border-top-right-radius:0;
+    }
+    .rounded-t-l-none {
+        border-top-left-radius:0;
+    }
+    .rounded-b-r-none {
+        border-bottom-right-radius:0;
+    }
+    .rounded-b-l-none {
+        border-bottom-left-radius:0;
+    }
+    .h-auto{
+        height:auto;
+    }
+  }
