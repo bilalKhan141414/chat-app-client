@@ -1,3 +1,13 @@
 .chatBox {
     background-image: url('./../../assets/chatbg.svg');
 }
+.closeIcon{
+    background: #ffffff9e;
+    display:none;
+}
+
+.file-preview:hover .closeIcon{
+    display:flex;
+    cursor: pointer;
+}
+

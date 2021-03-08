@@ -5,6 +5,17 @@ module.exports = {
       loader: 'webpack-remove-debug'
     },
     {
+      test: /\.(mov|mp4)$/,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]'
+          }  
+        }
+      ]
+    },
+    {
       test: /\.(txt|csv|mmdb)$/,
       use: [
         {
@@ -17,12 +28,18 @@ module.exports = {
       ],
     },
   ],
-    style: {
-      postcss: {
-        plugins: [
-          require('tailwindcss'),
-          require('autoprefixer'),
-        ],
-      },
+  loaders: [
+      {
+        test: /\.js$/,
+        loader: 'webpack-remove-debug'
+      }
+  ],
+  style: {
+    postcss: {
+      plugins: [
+        require('tailwindcss'),
+        require('autoprefixer'),
+      ],
     },
-  }
+  },
+}

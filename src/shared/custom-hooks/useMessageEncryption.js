@@ -7,7 +7,7 @@ export default function useMessageEncryption() {
     }
     const encode = (message) => {
         const encoder = new TextEncoder();
-        return encoder.encode(message);
+        return encoder.encode(JSON.stringify(message));
     }
     return {
         encode,

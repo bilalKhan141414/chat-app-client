@@ -1,0 +1,32 @@
+
+.uploadLoader{
+    background: #0000003d;
+    .loaderSize{
+        max-width: 70px;
+        svg {
+            display: inline;
+            // width: 100px;
+            // height: 100px;
+            circle {
+                fill: none;
+                stroke-width: 12px;
+                &:nth-child(1) {
+                    stroke: rgba(white, .2);;
+                }
+                &:nth-child(2) {
+                    stroke: white;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-dasharray: 320;
+                    // stroke-dashoffset: 402.124;
+                    transition: all 150ms ease-out;
+                }
+            }
+        }
+    }
+    .loaderText{
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
+}
