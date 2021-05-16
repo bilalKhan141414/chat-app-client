@@ -1,0 +1,36 @@
+.sideBar{
+    width: 390px;
+    .message{
+        &:hover{
+            .msgControls, .addFriendContainer{
+                display: flex;
+            }
+        }
+        .addFriendContainer{
+            background-color: #ffffffd4;
+            .addFriendControl {
+                font-size: 38px;
+                color: #595959;
+            }
+        }   
+        .msgControls{
+            
+            &.userConfig {
+                div{
+                    font-size: 20px; 
+                    top: 9px; 
+                    line-height: 0;
+                    font-weight: bold;
+                }
+            }
+            &.addFriendControl {
+                div{
+                    font-size: 20px;
+                    top: 11px;
+                    line-height: 0;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
